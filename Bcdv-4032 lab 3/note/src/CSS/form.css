@@ -1,0 +1,92 @@
+.form-row{
+    display: flex;
+    margin: 1rem;
+}
+
+.form-item{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.form-item:first-child{
+    margin-left: 0;
+}
+
+.form-item label{
+    
+    font-family: 'Roboto Mono',monospace;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: .25rem;
+    margin-left: .25rem;
+    color: var(--font-color);
+} 
+
+.form-item input, .form-item select, .form-item textarea{
+    height: 2rem;
+    padding: .25rem .5rem;
+    border-radius: .25rem;
+    border: 1px solid var(--header-border);
+    background: var(--bg);
+    outline: none;
+    color: var(--font-color);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.form-item input:focus, .form-item select:focus, .form-item textarea:focus
+{
+    border-color:var(--hover);
+    
+}
+
+.form-row-end{
+    justify-content: flex-end;
+}
+.form-item textarea{
+    height: 500px;
+    resize: none;
+}
+
+.form-item select option{
+    background-color: var(--bg);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.file-label{
+    cursor: pointer;
+    border: 1px solid var(--header-border);
+    padding: .25rem .5rem;
+    text-align: center;
+    border-radius: 0.25rem;
+    margin-top: 25px;
+}
+.file-label:hover{
+     background-color: var(--hover-btn);
+    color: var(--hover-btn-font);
+}
+
+#file {
+    opacity: 0;
+    width: 0;
+    height: 0;
+   position: absolute;
+   z-index: -1;
+}
+
+@media screen and (max-width: 900px) {
+    .form-row{
+        flex-direction: column;
+    }
+
+    .form-item{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}

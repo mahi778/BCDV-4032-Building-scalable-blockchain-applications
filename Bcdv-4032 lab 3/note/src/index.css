@@ -1,0 +1,106 @@
+@import "CSS/header.css";
+@import "CSS/footer.css";
+@import "CSS/form.css";
+@import "CSS/buttons.css";
+@import "CSS/variables.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+}
+
+.page-header {
+  font-size: 40px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  color: var(--font-color);
+  text-align: center;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.inner-container {
+  margin: 0 1rem;
+  padding-bottom: 60px;
+}
+
+.errorMessage {
+  color: var(--font-color);
+  font-family: "Roboto Mono", monospace;
+  font-size: larger;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-style: italic;
+}
+
+.cover-image {
+  width: 100%;
+  overflow: hidden;
+}
+.cover-image img {
+  height: 500px;
+  object-fit: cover;
+  margin: -250px 0 0 0px;
+}
+
+.mode-icon {
+  border: 0;
+  background: none;
+  cursor: pointer;
+  color: var(--font-color);
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.mode-icon:hover {
+  color: var(--hover);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+  border-left: 1px solid rgb(118, 243, 201);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(118, 243, 201);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(110, 231, 191);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 1rem;
+  justify-items: center;
+}
+
+.grid p {
+  color: var(--font-color);
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .page-header {
+    font-size: 25px;
+  }
+
+  .grid p {
+    font-size: 15px;
+  }
+}

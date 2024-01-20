@@ -1,0 +1,35 @@
+.btn{
+    border: 1px solid var(--header-border);
+    outline: none;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Roboto Mono", monospace;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-primary{
+    color: var(--btn-font);
+    background-color: var(--btn-bg);
+}
+
+.btn-primary:hover{
+    background-color: var(--hover-btn);
+    color: var(--hover-btn-font);
+}
+
+
+.btn-row{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.btn-row > *{
+    margin-left: 1rem;
+}

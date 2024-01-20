@@ -1,0 +1,19 @@
+footer{
+    padding: 10px;
+    position:absolute;
+    bottom:0;
+    width: 100%;
+}
+
+.social a{
+    color: var(--font-color);
+    text-decoration: none;
+    font-size: 19px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.social a:hover{
+    color: var(--hover);
+}

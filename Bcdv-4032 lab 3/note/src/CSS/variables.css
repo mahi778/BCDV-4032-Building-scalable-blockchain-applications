@@ -1,0 +1,42 @@
+:root {
+    --light-bg: white;
+    --light-header: white;
+    --dark-bg:rgb(54, 54, 54);
+    --dark-header: rgb(54, 54, 54);
+    --border-light: rgb(118, 243, 201);
+    --border-dark:  rgb(118, 243, 201);
+    --light-font:black;
+    --dark-font:rgb(118, 243, 201);
+    --font-btn:rgb(118, 243, 201);
+    --hover-light: rgb(118, 243, 201);
+    --hover-dark: white;
+    --light-bg-btn:white;
+    --dark-bg-btn:rgb(54, 54, 54);
+    --bg-btn-hover:rgb(118, 243, 201);
+    --light-font-btn-hover:white;
+    --dark-font-btn-hover:rgb(54, 54, 54);
+  }
+
+.light-theme {
+    --bg: var(--light-bg);
+    --header-bg: var(--light-header);
+    --header-border: var(--border-light);
+    --font-color: var(--light-font);
+    --hover: var(--hover-light);
+    --btn-font: var(--font-btn);
+    --btn-bg:var(--light-bg-btn);
+    --hover-btn:var(--bg-btn-hover);
+    --hover-btn-font:var(--light-font-btn-hover);
+  }
+  
+.dark-theme {
+  --bg: var(--dark-bg);
+  --header-bg: var(--dark-header);
+  --header-border: var(--border-dark);
+  --font-color: var(--dark-font);
+  --hover: var(--hover-dark);
+  --btn-font: var(--font-btn);
+  --btn-bg:var(--dark-bg-btn);
+  --hover-btn:var(--bg-btn-hover);
+  --hover-btn-font:var(--dark-font-btn-hover);
+}
