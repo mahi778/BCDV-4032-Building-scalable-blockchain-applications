@@ -1,0 +1,40 @@
+POSTMAN
+Browser
+Minikube
+Kubectl
+Docker
+
+minikube start
+
+minikube dashboard (another terminal)
+
+run all yaml files
+
+kubectl apply -f ganache-deployment.yaml
+kubectl apply -f ganache-service.yaml
+
+kubectl apply -f backend-deployment.yaml
+kubectl apply -f backend-service.yaml
+
+kubectl apply -f frontend-deployment.yaml
+kubectl apply -f frontend-service.yaml
+
+minikube tunnel (another terminal)
+
+access at localhost:5000 or 127.0.0.1:5000 in browser
+
+If doesnt work any commands, alternating it in postman, it should work.
+
+POST http://localhost:4000/compile
+
+POST http://localhost:4000/deploy
+
+GET http://localhost:4000/
+
+POST http://localhost:4000/
+
+Body -> raw -> JSON
+
+{
+  "message": "Running in Minikube"
+}

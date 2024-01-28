@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: client
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: client
+  template:
+    metadata:
+      labels:
+        app: client
+    spec:
+      containers:
+        - name: frontend
+          image: harsh/client:latest
+          resources:
+            limits:
+              cpu: "500m" # 500 millicores
+              memory: "500Mi"
+          ports:
+            - containerPort: 80

@@ -1,0 +1,24 @@
+version: "3"
+services:
+  dockerethganache:
+    image: chargaoshou/dockerethganache:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.ganache
+    ports:
+      - "8545:8545"
+  dockerethbackend:
+    image: chargaoshou/dockerethbackend:latest
+    build: .
+    ports:
+      - "4000:4000"
+    depends_on:
+      - dockerethganache
+
+  dockerethfrontend:
+    image: chargaoshou/dockerethfrontend:latest
+    build: ./client
+    ports:
+      - "3000:80"
+    depends_on:
+      - dockerethbackend
